@@ -165,3 +165,29 @@ document.getElementById('loginButton').addEventListener('click', function(){
   
   });
   
+//   login function
+document.getElementById("loginButton").addEventListener("click", function (event) {
+    var email = document.getElementById("EmailAddress").value;
+    var password = document.getElementById("Password").value;
+  
+    console.log("EmailAddress", email);
+  
+    console.log("Password", password);
+    if (email === "" || password === "" ) {
+      console.log("Email or password is not entered")
+      document.getElementById("errormessage").textContent = "Please enter email and password";
+      event.preventDefault();
+  
+    }
+    else  {
+      console.log("yesss")
+      document.getElementById("errormessage").textContent = "";
+          window.location.href = "index.html"
+    }
+  });
+
+
+  /**Script to get to the home page after clicking on the back to home button**/
+document.getElementById("homeButton").addEventListener("click", function(){
+    window.location.href ="index.html"; 
+    });
