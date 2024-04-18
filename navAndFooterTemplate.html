@@ -2,16 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOGIN</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!--bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--google font: inter-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <!--custom style-->
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Home</title>
 </head>
 
 <body>
+  <!--Template for a page, includes navbar, footer-->
+
   <!--navbar-->
   <nav class="container-fluid" id="my-nav">
     <a href="index.html" class="title-link">Watchshop</a>
@@ -25,51 +34,14 @@
     </ul>
   </nav>
 
-  <!--conatiner for first two cards-->
-  <div class="login-container">
 
-    <!--card for login details-->
-    <div class="login-cards col-md-6">
-      <div class="cards-body">
-        <!--login details-->
-        <h1 class="login-heading">LOGIN</h1>
-       <form id="loginform">
-        <div class="flex_text"><input id="EmailAddress" type="email" name="email" placeholder="Email address *"
-            required></div>
-        <div class="flex_text"><input type="Password" name="password" placeholder="Password *" id="password" required>
-        </div>
-        <div class="cards-button">
-          <!--navigate to main page-->
-          <div class="flex_button1"><a href="#"><button id="loginButton" type="button" onclick="validate(this.form)">LOGIN</button></a></div>
-          <div id="errormessage"></div>
-        </div>
-      </div>
-    </div>
-    <!--card for first image-->
-    <div class="login-cards1 col-md-4">
-      <img src="Images/login2.jpg" class="rounded float-start" alt="image of watch" width="100%">
-    </div>
-  </div>
+  <!--place content within a class called container-->
+  <div class="container">
+    <!--this container has temporary styling in style.css-->
+    <!--rename the class as: pagename-container
+      name of conatiner based on page name-->
+    <!--style acordingly-->
 
-
-  <!--conatiner for bottom cards-->
-  <div class="login-container">
-    <!--card for second image-->
-
-    <div class="login-cards2 col-md-4">
-      <img src="Images/watchLogIn.jpg" class="rounded float-start" alt="image of watch" width="100%">
-    </div>
-
-    <!--card for create an account details-->
-    <div class="login-cards3 col-md-6"  style=" background-color:rgb(197, 194, 194); ">
-      <div class="cards-body">
-        <!--deatils to craete an account-->
-        <h3>Create An Account</h3>
-        <p>Don't have an account? Sign up to make your checkout faster.</p>
-        <!--navigate to sign up page -->
-        <a href="signup.html"><button type="button"> Create an Account</button></a>
-      </div>
-    </div>
   </div>
 
   <!--footer-->
@@ -113,21 +85,13 @@
           <button type="submit" class="button">Join</button>
         </div>
       </div>
+
       <p>&copy; 2024 Sam Watchshop Canada</p>
     </div>
   </footer>
-
-  <!--script for bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
-  <!--javascript-->
-
-  <script src="script.js"></script>
-
-
 </body>
-
 
 </html>

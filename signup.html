@@ -1,209 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      body {
-        background-color: #f8f9fa;
-        padding-top: 8rem;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 0;
+    }
+
+    .signup-form {
+      max-width: 400px;
+      margin: 5vh auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
       .signup-form {
-        max-width: 400px;
-        margin: 50px auto;
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px;
       }
-      .signup-form h2 {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+    }
 
-      @media (max-width: 600px) {
-        .signup-form {
-          padding: 20px;
-          margin: 20px;
-        }
-      }
+    input:focus {
+      transition: box-shadow 0.3s ease-in-out;
+      box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+    }
+  </style>
+</head>
 
-      input:focus {
-        transition: box-shadow 0.3s ease-in-out;
-        box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="container-fluid" id="my-nav">
-      <h1><a href="#" class="title-link">Sam Watchshop</a></h1>
-      <ul class="d-flex nav-links">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li>
-          <select name="brand" id="shop" class="nav-select">
-            <option value="" selected>Shops</option>
-            <option value="1">Women</option>
-            <option value="2">Men</option>
-          </select>
-        </li>
-        <li>
-          <select name="brand" id="brand" class="nav-select">
-            <option value="" selected>Brands</option>
-            <option value="1">Fossil</option>
-            <option value="2">Tissot</option>
-            <option value="3">Micheal K</option>
-            <option value="3">Swatch</option>
-          </select>
-        </li>
-        <li><a href="#" class="nav-link link-signup">Sign Up/ Sign In</a></li>
-      </ul>
-    </nav>
+<body>
+  <nav class="container-fluid" id="my-nav">
+    <a href="index.html" class="title-link">Watchshop</a>
 
-    <div class="container">
-      <div class="signup-form">
-        <h2>Sign Up</h2>
-        <form action="#" method="post" onsubmit="return checkPasswordsMatch();">
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              name="firstname"
-              placeholder="First Name"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              name="lastname"
-              placeholder="Last Name"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="Email Address"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              class="form-control"
-              name="password"
-              placeholder="Password"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              class="form-control"
-              name="confirm_password"
-              placeholder="Confirm Password"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <a href="login.html"><button type="submit" class="btn btn-primary btn-block"></a>
-              Sign Up
-            </button>
-          </div>
-        </form>
-      </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" id="men-select">Men</a></li>
+      <li><a href="products.html" id="women-select">Women</a></li>
+      <li><a href="products.html">Vew All</a></li>
+      <li><a href="login.html" class="link-signup">Log in/Sign up</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form action="#" method="post" onsubmit="return checkPasswordsMatch();">
+        <div class="form-group">
+          <input type="text" class="form-control" name="firstname" placeholder="First Name" required="required" />
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="lastname" placeholder="Last Name" required="required" />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email Address" required="required" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Password" required="required" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+            required="required" />
+        </div>
+        <div class="form-group">
+          <a href="login.html"><button type="submit" class="btn btn-primary btn-block"></a>
+          Sign Up
+          </button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <footer>
-      <div class="container-xxl text-center">
-        <div class="row mb-5" id="my-flex">
-          <div class="col col-1">
-            <ul class="footer-links">
-              <li><a href="#" class="footer_link mb-3">Home</a></li>
-              <li><a href="#" class="footer_link mb-3">Shop</a></li>
-              <li><a href="#" class="footer_link mb-3">About Us</a></li>
-            </ul>
-          </div>
-          <div class="col col-2">
-            <ul class="footer-links">
-              <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
-              <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
-              <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
-            </ul>
-          </div>
-          <div class="col col-3">
-            <p class="footer-title">Connect With Us!</p>
-            <div class="row social-logos">
-              <div class="col">
-                <img
-                  src="Images/twitter.png"
-                  alt="twitter logo"
-                  class="social-img"
-                />
-              </div>
-              <div class="col">
-                <img
-                  src="Images/fbIcon.png"
-                  alt="facebook logo"
-                  class="social-img"
-                />
-              </div>
-              <div class="col">
-                <img
-                  src="Images/instagram.png"
-                  alt="instagram logo"
-                  class="social-img"
-                />
-              </div>
+  <footer>
+    <div class="container-xxl text-center">
+      <div class="row mb-5" id="my-flex">
+        <div class="col col-1">
+          <ul class="footer-links">
+            <li><a href="#" class="footer_link mb-3">Home</a></li>
+            <li><a href="#" class="footer_link mb-3">Shop</a></li>
+            <li><a href="#" class="footer_link mb-3">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col col-2">
+          <ul class="footer-links">
+            <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
+            <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
+            <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
+          </ul>
+        </div>
+        <div class="col col-3">
+          <p class="footer-title">Connect With Us!</p>
+          <div class="row social-logos">
+            <div class="col">
+              <img src="Images/twitter.png" alt="twitter logo" class="social-img" />
+            </div>
+            <div class="col">
+              <img src="Images/fbIcon.png" alt="facebook logo" class="social-img" />
+            </div>
+            <div class="col">
+              <img src="Images/instagram.png" alt="instagram logo" class="social-img" />
             </div>
           </div>
-          <div class="col col-4">
-            <p class="footer-title">Join our Newsletter!</p>
-            <p class="footer-text mb-3">
-              Join our newsletter to get the info on our latest product!
-            </p>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@email.com"
-            />
-            <button type="submit" class="button">Join</button>
-          </div>
         </div>
-
-        <p>&copy; 2024 Sam Watchshop Canada</p>
+        <div class="col col-4">
+          <p class="footer-title">Join our Newsletter!</p>
+          <p class="footer-text mb-3">
+            Join our newsletter to get the info on our latest product!
+          </p>
+          <input type="email" name="email" id="email" placeholder="example@email.com" />
+          <button type="submit" class="button">Join</button>
+        </div>
       </div>
-    </footer>
-    <script>
-      function checkPasswordsMatch() {
-        const password = document.querySelector('[name="password"]').value;
-        const confirmPassword = document.querySelector(
-          '[name="confirm_password"]'
-        ).value;
-        if (password !== confirmPassword) {
-          alert("Passwords do not match!");
-          return false;
-        }
-        alert("Thank you for signing up!");
-        window.location.href = "login.html"; // Redirect to login page
-        return true;
+
+      <p>&copy; 2024 Sam Watchshop Canada</p>
+    </div>
+  </footer>
+  <script>
+    function checkPasswordsMatch() {
+      const password = document.querySelector('[name="password"]').value;
+      const confirmPassword = document.querySelector(
+        '[name="confirm_password"]'
+      ).value;
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return false;
       }
-    </script>
-  </body>
+      alert("Thank you for signing up!");
+      window.location.href = "login.html"; // Redirect to login page
+      return true;
+    }
+  </script>
+</body>
+
 </html>

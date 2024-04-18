@@ -2,97 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--google font: inter-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <!--custom style-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!--bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--google font: inter-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <!--custom style-->
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Home</title>
+
 <body>
-   <!--navbar-->
-   <nav class="container-fluid" id="my-nav">
-    <a href="#" class="title-link">Watchshop</a>
+  <!--navbar-->
+  <nav class="container-fluid" id="my-nav">
+    <a href="index.html" class="title-link">Watchshop</a>
 
     <ul class="nav-links">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li>
-            <select name="brand" id="shop" class="nav-select">
-                <option value="" selected><a>Shop</a></option>
-                <option value="1">Women</option>
-                <option value="2">Men</option>
-            </select>
-        </li>
-        <li>
-            <select name="brand" id="brand" class="nav-select">
-                <option value="" selected><a>Brands</a></option>
-                <option value="1"><a>Fossil</a></option>
-                <option value="2"><a>Tissot</a></option>
-                <option value="3"><a>Micheal Kors</a></option>
-                <option value="3">Swatch</option>
-            </select>
-        </li>
-        <li><a href="#" class="nav-link link-signup">Sign Up/ Sign In</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" id="men-select">Men</a></li>
+      <li><a href="products.html" id="women-select">Women</a></li>
+      <li><a href="products.html">Vew All</a></li>
+      <li><a href="login.html" class="link-signup">Log in/Sign up</a></li>
     </ul>
-</nav>
-<!--Shipping Information Container--> 
-<body>
-  <div class="shipping-container">
-    <div class="row">
-      <!-- Contact Form -->
-      <div class="col-md-6">
-        <div class="form-box border">
-          <h3 class="mb-3">Contact Information</h3>
-          <form>
-            <div class="form-group">
-              <label for="emailaddress">Email Address</label>
-              <input type="text" class="form-control" id="emailaddress" placeholder="name@example.com">
-            </div>
-            <!--Shipping Form-->
-            <div class="py-5">
-            <h3 class="mb-3"> Shipping Information</h3>
-            <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" class="form-control" id="fullname" placeholder="Please enter your full name">
-            </div>
-            <div class="form-group">
-              <label for="phonenumber">Phone Number</label>
-              <input type="text" class="form-control" id="phonenumber" placeholder="Please enter your phone number">
-            </div>
-            <div class="form-group">
-              <label for="address">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="Please enter your full address">
-            </div>
-            <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" class="form-control" id="city" placeholder="Please enter your city">
-            </div>
-            <div class="form-group">
-              <label for="province">State/Province</label>
-              <input type="text" class="form-control" id="province" placeholder="Please enter your province/state">
-            </div>
-            <div class="form-group">
-              <label for="postalcode">Postal/Zip Code</label>
-              <input type="text" class="form-control" id="postalcode" placeholder="Please enter your postal/zip code">
-            </div>
-            <div class="form-group">
-              <label for="country">Country</label>
-              <input type="text" class="form-control" id="country" placeholder="Please enter your country">
-            </div>
-            </div>
-            <!--To save shipping and contact information-->
+  </nav>
+  <!--Shipping Information Container-->
+
+  <body>
+    <div class="shipping-container">
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="form-box border">
+            <h3 class="mb-3">Contact Information</h3>
+            <form>
+              <div class="form-group">
+                <label for="emailaddress">Email Address</label>
+                <input type="text" class="form-control" id="emailaddress" placeholder="name@example.com">
+              </div>
+              <!--Shipping Form-->
+              <div class="py-5">
+                <h3 class="mb-3"> Shipping Information</h3>
+                <div class="form-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" class="form-control" id="fullname" placeholder="Please enter your full name">
+                </div>
+                <div class="form-group">
+                  <label for="phonenumber">Phone Number</label>
+                  <input type="text" class="form-control" id="phonenumber" placeholder="Please enter your phone number">
+                </div>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="Please enter your full address">
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control" id="city" placeholder="Please enter your city">
+                </div>
+                <div class="form-group">
+                  <label for="province">State/Province</label>
+                  <input type="text" class="form-control" id="province" placeholder="Please enter your province/state">
+                </div>
+                <div class="form-group">
+                  <label for="postalcode">Postal/Zip Code</label>
+                  <input type="text" class="form-control" id="postalcode"
+                    placeholder="Please enter your postal/zip code">
+                </div>
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <input type="text" class="form-control" id="country" placeholder="Please enter your country">
+                </div>
+              </div>
+              <!--To save shipping and contact information-->
               <div class="form-check py-10">
                 <input id="sameaddress" type="checkbox" class="form-check-input">
-                <label class="form-check-label" for="sameaddress">Shipping address is the same as billing address</label>
-             </div> 
-             <div class="form-check">
+                <label class="form-check-label" for="sameaddress">Shipping address is the same as billing
+                  address</label>
+              </div>
+              <div class="form-check">
                 <input id="saveinfo" type="checkbox" class="form-check-input">
                 <label class="form-check-label" for="saveinfo">Save this Information</label> 
              </div>
@@ -131,14 +122,15 @@
             <div class="form-group">
               <label for="cardNumber">Card Number</label>
               <input type="text" class="form-control" id="cardNumber" placeholder="Please enter your card number">
+
             </div>
-            <div class="form-group">
-              <label for="expiryDate">Expiry Date</label>
-              <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+            <div class="shipping-option">
+              <input type="radio" id="express" name="shipping" value="express">
+              <label for="express">Express Shipping Rate ($100)</label>
             </div>
-            <div class="form-group">
-              <label for="cvv">CVV</label>
-              <input type="text" class="form-control" id="cvv" placeholder="Please enter your cvv">
+            <div class="shipping-option">
+              <input type="radio" id="overnight" name="shipping" value="overnight">
+              <label for="overnight">Overnight Shipping Rate ($150)</label>
             </div>
             <!--To show order summary including subtotal, shipping, tax and total-->
             <div class="order-summary">
@@ -165,83 +157,97 @@
               <div class="summary-item">
                 <span>Total: </span>
                 <span id="total">$0.00</span>
+
+              </div>
+              <!--To show order summary including subtotal, shipping, tax and total-->
+              <div class="summary-container">
+                <div class="py-5">
+                  <h3>Order Summary</h3>
+
+                  <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                  </div>
+
+                  <div class="summary-item">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                  </div>
+
+                  <div class="summary-item">
+                    <span>Tax:</span>
+                    <span id="tax">$0.00</span>
+                  </div>
+
+                  <hr>
+
+                  <div class="summary-item">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                  </div>
+                </div>
+
+                <!-- button to process payment-->
+                <div class="py-5 text">
+                  <button id="processPayment">Process Payment</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="container-xxl text-center">
+        <div class="row mb-5" id="my-flex">
+          <div class="col col-1">
+            <ul class="footer-links">
+              <li><a href="#" class="footer_link mb-3">Home</a></li>
+              <li><a href="#" class="footer_link mb-3">Shop</a></li>
+              <li><a href="#" class="footer_link mb-3">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col col-2">
+            <ul class="footer-links">
+              <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
+              <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
+              <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
+            </ul>
+          </div>
+          <div class="col col-3">
+            <p class="footer-title">Connect With Us!</p>
+            <div class="row social-logos">
+              <div class="col">
+                <img src="Images/twitter.png" alt="twitter logo" class="social-img" />
+              </div>
+              <div class="col">
+                <a><img src="Images/fbIcon.png" alt="facebook logo" class="social-img" /></a>
+              </div>
+              <div class="col">
+                <a><img src="Images/instagram.png" alt="instagram logo" class="social-img" /></a>
               </div>
             </div>
-          
-            <!-- button to process payment-->
-            <div class="py-5 text">
-            <button id="processPayment">Process Payment</button> 
-          </form>
-        </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>   
- <!--footer-->
- <footer>
-  <div class="container-xxl text-center">
-    <div class="row mb-5" id="my-flex">
-      <div class="col col-1">
-        <ul class="footer-links">
-          <li><a href="#" class="footer_link mb-3">Home</a></li>
-          <li><a href="#" class="footer_link mb-3">Shop</a></li>
-          <li><a href="#" class="footer_link mb-3">About Us</a></li>
-        </ul>
-      </div>
-      <div class="col col-2">
-        <ul class="footer-links">
-          <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
-          <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
-          <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
-        </ul>
-      </div>
-      <div class="col col-3">
-        <p class="footer-title">Connect With Us!</p>
-        <div class="row social-logos">
-          <div class="col">
-            <img
-              src="Images/twitter.png"
-              alt="twitter logo"
-              class="social-img"/>
           </div>
-          <div class="col">
-            <a><img
-              src="Images/fbIcon.png"
-              alt="facebook logo"
-              class="social-img"/></a>
-          </div>
-          <div class="col">
-            <a><img
-              src="Images/instagram.png"
-              alt="instagram logo"
-              class="social-img"/></a>
+          <div class="col col-4">
+            <p class="footer-title">Join our Newsletter!</p>
+            <p class="footer-text mb-3">
+              Join our newsletter to get the info on our latest product!
+            </p>
+            <input type="email" name="email" id="email" placeholder="example@email.com" />
+            <button type="submit" class="button">Join</button>
           </div>
         </div>
+        <p>&copy; 2024 Sam Watchshop Canada</p>
       </div>
-      <div class="col col-4">
-        <p class="footer-title">Join our Newsletter!</p>
-        <p class="footer-text mb-3">
-          Join our newsletter to get the info on our latest product!
-        </p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="example@email.com"
-        />
-        <button type="submit" class="button">Join</button>
-      </div>
-    </div>
-<p>&copy; 2024 Sam Watchshop Canada</p>
-  </div>
-</footer>
- <!--Script for Boothstrap-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
- crossorigin="anonymous"></script>  
- <!--Link and script-->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- <script type="text/javascript" src="shipping.js"></script> 
-</body>
+    </footer>
+    <!--Script for Boothstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <!--Link and script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="shipping.js"></script>
+  </body>
+
 </html>

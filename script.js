@@ -122,8 +122,6 @@ const watches = [
     
 ]
 
-
-
 function renderImages() {
     const container = document.getElementById("imageContainer");
 
