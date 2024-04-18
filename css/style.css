@@ -24,7 +24,9 @@
 }
 .Shopping-container{
     padding: 15% 5%;
-
+}
+.Shopping-container{
+    padding: 15% 5%;
 }
 
 .shoppingHeading {
@@ -114,7 +116,7 @@
   outline: none;
   border-bottom: 1px solid black;
   padding: 3rem ;
-  width: 30rem;
+  width: 20rem;
   padding-bottom: 1rem;
   font-size: large;
 }
@@ -128,11 +130,16 @@
 .cards-body .flex_button1 button {
   background-color: black;
   color: white;
-  width: 20rem;
-  margin-top: 2rem;
+  width:100px;
+  list-style: none;
+  text-align: center;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   cursor: pointer;
   font-size: large;
+}
+.cards-body .flex_button1 button:hover{
+  background-color: #323232;
 }
 
 /*css for create an account card*/
@@ -159,45 +166,45 @@ button {
   color: white;
   padding: 10px;
   width: auto;
+  
   margin-top: 10px;
   font-size: large;
   margin-bottom: 10px;
 }
-
-
+.cards-body button a{
+  text-decoration: none;
+}
 /*media query for max width 1000px*/
 @media (max-width:1130px) {
   .login-container {
     display: block;
+  }
+  
+    .login-cards3 {
+    width: 100%;
+    overflow: hidden;
+    }
     
-  }
-  .login-cards3 {
-  overflow: hidden;
-}
-
-
-  .login-cards2 {
-    display: none;
-  }
-  .login-cards1{
-    padding-bottom: 10rem;
-  }
-
-  .login-container .login-cards1 {
-    width: 50rem;
-    margin-left: 15rem;
-  }
-}
-
-/*media query for max width*/
-@media (max-width:800px) {
-  .login-container {
-    width: auto;
-    margin: 30px;
-    height: auto;
+    .login-cards2 {
+      float: right;
+      display: block;
+      width: 100%;
+    
+    }
+    .login-cards1 {
+      width: 100%;
+      margin-left: 15rem;
+    }
+    .login-cards{
+      width: 100%;
+    }
+    .cards-body .flex_text input{
+      width: 20px;
+    }
   }
 
-}
+
+
 
 /*==============================================================*/
 
@@ -451,7 +458,7 @@ button{
   font-family: "Inter";
   font-size: 14px;
 }
-.shipping-option{
+.shipping-method{
   margin-bottom: 10px;
 }
 .shipping-option label{
@@ -461,6 +468,66 @@ button{
 .shipping-option input[type="radio"]{
   margin-right: 5px;
 }
+/* ================================================ */
 
- 
+/* =============== products page ================== */
+.products-container {
+  width: 90%;
+  padding: 30vh 0px;
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.filter {
+  background-color: #222;
+  color: #fff;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.products-container .brands, .products-container .categories {
+  list-style: none;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
+.filter-header {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: start;
+  padding-left: 30px;
+}
+
+.display-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 350px); /* Adjust as needed */
+}
+
+.image-card {
+  width: calc(25% - 20px); /* 4 images per row */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-card img {
+  padding-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.display-products p{
+  text-align: center;
+}
+.brand-name, .product-price{
+  font-weight: 700;
+}
+.product-name{
+  font-size: 15px;
+}
+
+
+/* ================================================== */

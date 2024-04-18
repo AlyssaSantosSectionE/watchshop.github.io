@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
@@ -35,37 +34,33 @@
           <option value="3">Swatch</option>
         </select>
       </li>
-      <li><a href="#" class="nav-link link-signup">Sign Up/ Sign In</a></li>
+      <li><a href="#" id="login-btn" class="nav-link link-signup">Sign Up/ Sign In</a></li>
     </ul>
   </nav>
 
- 
-
- 
-
   <!--conatiner for first two cards-->
   <div class="login-container">
-    
+
     <!--card for login details-->
-    <div class="login-cards" style="width:45rem;">
+    <div class="login-cards col-md-6">
       <div class="cards-body">
         <!--login details-->
         <h1 class="login-heading">LOGIN</h1>
-        <div class="flex_text"><input type="email" name="email" placeholder="Email address *"></div>
-        
-        <div class="flex_text"><input type="password" name="password" placeholder="Password *"><span
-            class="material-symbols-outlined">
-            visibility
-          </span></div>
+       <form id="loginform">
+        <div class="flex_text"><input id="EmailAddress" type="email" name="email" placeholder="Email address *"
+            required></div>
+        <div class="flex_text"><input type="Password" name="password" placeholder="Password *" id="password" required>
+        </div>
         <div class="cards-button">
           <!--navigate to main page-->
-          <div class="flex_button1"><a href="index.html"><button type="button">LOGIN</button></a></div>
+          <div class="flex_button1"><a href="#"><button id="loginButton" type="button" onclick="validate(this.form)">LOGIN</button></a></div>
+          <div id="errormessage"></div>
         </div>
       </div>
     </div>
     <!--card for first image-->
-    <div class="login-cards1" style="width: 750px;">
-      <img src="Images/login2.jpg" class="rounded float-start" alt="..." width="100%">
+    <div class="login-cards1 col-md-4">
+      <img src="Images/login2.jpg" class="rounded float-start" alt="image of watch" width="100%">
     </div>
   </div>
 
@@ -73,12 +68,13 @@
   <!--conatiner for bottom cards-->
   <div class="login-container">
     <!--card for second image-->
-    <div class="login-cards2" style="width: 750px;">
-      <img src="Images/watchLogIn.jpg" class="rounded float-start" alt="..." width="100%">
+
+    <div class="login-cards2 col-md-4">
+      <img src="Images/watchLogIn.jpg" class="rounded float-start" alt="image of watch" width="100%">
     </div>
 
     <!--card for create an account details-->
-    <div class="login-cards3" style="width: 45rem;  background-color:rgb(197, 194, 194); ">
+    <div class="login-cards3 col-md-6"  style=" background-color:rgb(197, 194, 194); ">
       <div class="cards-body">
         <!--deatils to craete an account-->
         <h3>Create An Account</h3>
@@ -89,71 +85,61 @@
     </div>
   </div>
 
+  <!--footer-->
+  <footer>
+    <div class="container-xxl text-center">
+      <div class="row mb-5" id="my-flex">
+        <div class="col col-1">
+          <ul class="footer-links">
+            <li><a href="#" class="footer_link mb-3">Home</a></li>
+            <li><a href="#" class="footer_link mb-3">Shop</a></li>
+            <li><a href="#" class="footer_link mb-3">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col col-2">
+          <ul class="footer-links">
+            <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
+            <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
+            <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
+          </ul>
+        </div>
+        <div class="col col-3">
+          <p class="footer-title">Connect With Us!</p>
+          <div class="row social-logos">
+            <div class="col">
+              <img src="Images/twitter.png" alt="twitter logo" class="social-img" />
+            </div>
+            <div class="col">
+              <a><img src="Images/fbIcon.png" alt="facebook logo" class="social-img" /></a>
+            </div>
+            <div class="col">
+              <a><img src="Images/instagram.png" alt="instagram logo" class="social-img" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-4">
+          <p class="footer-title">Join our Newsletter!</p>
+          <p class="footer-text mb-3">
+            Join our newsletter to get the info on our latest product!
+          </p>
+          <input type="email" name="email" id="email" placeholder="example@email.com" />
+          <button type="submit" class="button">Join</button>
+        </div>
+      </div>
+      <p>&copy; 2024 Sam Watchshop Canada</p>
+    </div>
+  </footer>
+
   <!--script for bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!--javascript-->
+
+  <script src="script.js"></script>
+
 </body>
 
-
-<!--footer-->
-<footer>
-  <div class="container-xxl text-center">
-    <div class="row mb-5" id="my-flex">
-      <div class="col col-1">
-        <ul class="footer-links">
-          <li><a href="#" class="footer_link mb-3">Home</a></li>
-          <li><a href="#" class="footer_link mb-3">Shop</a></li>
-          <li><a href="#" class="footer_link mb-3">About Us</a></li>
-        </ul>
-      </div>
-      <div class="col col-2">
-        <ul class="footer-links">
-          <li><a href="#" class="footer_link mb-3">Term of Service</a></li>
-          <li><a href="#" class="footer_link mb-3">Privacy Policy</a></li>
-          <li><a href="#" class="footer_link mb-3">Return & Refunds</a></li>
-        </ul>
-      </div>
-      <div class="col col-3">
-        <p class="footer-title">Connect With Us!</p>
-        <div class="row social-logos">
-          <div class="col">
-            <img
-              src="Images/twitter.png"
-              alt="twitter logo"
-              class="social-img"/>
-          </div>
-          <div class="col">
-            <a><img
-              src="Images/fbIcon.png"
-              alt="facebook logo"
-              class="social-img"/></a>
-          </div>
-          <div class="col">
-            <a><img
-              src="Images/instagram.png"
-              alt="instagram logo"
-              class="social-img"/></a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-4">
-        <p class="footer-title">Join our Newsletter!</p>
-        <p class="footer-text mb-3">
-          Join our newsletter to get the info on our latest product!
-        </p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="example@email.com"
-        />
-        <button type="submit" class="button">Join</button>
-      </div>
-    </div>
-
-    <p>&copy; 2024 Sam Watchshop Canada</p>
-  </div>
-</footer>
 
 </html>

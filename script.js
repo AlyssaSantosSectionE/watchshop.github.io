@@ -2,7 +2,7 @@
 const watches = [
     // fossil
     {
-        imageURL: "Images/fossil/Fossil_minimalistBlackLeatherWatch.png", 
+        imageURL: "Images/fossil/minimalist.png", 
         name: "Minimalist Black Leather Watch",
         category: "Men",
         brand: "Fossil", 
@@ -122,3 +122,48 @@ const watches = [
     
 ]
 
+
+
+function renderImages() {
+    const container = document.getElementById("imageContainer");
+
+    watches.forEach(image => {
+      const card = document.createElement("div");
+      card.classList.add("image-card");
+
+      const imageElement = document.createElement("img");
+      imageElement.src = image.imageURL;
+
+      const brandElement = document.createElement("p");
+      brandElement.textContent = `${image.brand}`;
+      brandElement.classList.add("brand-name");
+
+      const nameElement = document.createElement("p");
+      nameElement.textContent = `${image.name}`;
+      nameElement.classList.add("product-name");
+
+      const priceElement = document.createElement("p");
+      priceElement.textContent = `Price: $${image.price}`;
+      priceElement.classList.add("product-price");
+
+      card.appendChild(imageElement);
+      card.appendChild(brandElement);
+      card.appendChild(nameElement);
+      card.appendChild(priceElement);
+
+      container.appendChild(card);
+    });
+  }
+
+  // Call the function to render images when the page loads
+  window.onload = renderImages;
+
+//login page
+document.getElementById('loginButton').addEventListener('click', function(){
+      
+    document.getElementById('login-btn').style.display = 'none';
+  
+    window.location.href = 'index.html';
+  
+  });
+  
