@@ -1,0 +1,99 @@
+Brand: fossil
+
+category: men
+
+minimalist.png
+price: 179
+
+copeland.png
+Copeland 42 mm Three-Hand Brown Leather Watch
+price: 199
+
+
+
+category: women
+
+carlie.png
+Carlie Mini Three-Hand Black Leather Watch
+price: 139
+
+raquel.png
+Raquel Three-Hand Date Black Leather Watch
+price: 200
+
+
+
+Brand: Tissot ========================================
+
+category: men
+
+everytime.png
+TISSOT EVERYTIME 40MM
+price: 250
+
+classicDream
+TISSOT CLASSIC DREAM
+price: 260
+
+
+
+category: women
+
+dreamLady.png
+TISSOT CLASSIC DREAM LADY
+price: 250
+
+everytime30mm.png
+TISSOT EVERYTIME 30 mm
+price: 300
+
+
+
+Brand: Michael Kors =============================================
+
+category: men
+
+hutton.png
+Hutton Stainless Steel Case & Leather Strap Chronograph Watch MK8956
+price: 200
+
+lennox.png
+Lennox Chronograph Stainless Steel Watch MK8938
+price: 250
+
+
+
+category: women
+
+emery.png
+price: 190
+Emery Brown Empire Jacquard Watch MK2990
+
+pyper.png
+Pyper Stainless Steel & Leather Strap Watch MK2797
+price: 190
+
+
+Brand: Swatch ===========================================
+
+category: men
+
+goldenTac.png
+GOLDEN TAC
+price: 95
+
+
+blueRebel.png
+BLUE REBEL
+price: 110
+
+
+category: women
+
+roseRebel.png
+price: 110
+
+lsdyBlack.png
+price: 95
+
+

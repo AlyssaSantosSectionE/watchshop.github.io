@@ -1,0 +1,466 @@
+
+
+
+/*===================Shopping Cart Page=========================*/
+
+
+.Shopping-container {
+  margin: 10% 5%;
+  font-family: "Inter";
+}
+
+/*===================Shopping Cart Page=========================*/
+
+
+.Shopping-container {
+  padding: 15% 5%;
+  font-family: "Inter";
+
+}
+.Shopping-container{
+    padding: 15% 5%;
+    font-family: "Inter";
+ 
+}
+.Shopping-container{
+    padding: 15% 5%;
+
+}
+
+.shoppingHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shoppingHeadingItem a {
+  text-decoration: none;
+}
+
+.cart-container {
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+  padding: 2% 5%;
+}
+
+.emptyCartMsg {
+  text-align: center;
+  padding: 10% 10%;
+}
+
+/*==========================lOGIN===========================*/
+
+
+/*container css*/
+.login-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*css for "login details" and "create an account" card*/
+.login-cards,
+.login-cards1 {
+  border: 2px solid black;
+  width: auto;
+  margin: 3rem;
+  height: auto;
+  margin-top: 10rem;
+}
+
+/*css for image1 card*/
+/*css for image2 card*/
+.login-cards2,
+.login-cards3 {
+  border: 2px solid black;
+  width: auto;
+  margin: 3rem;
+  height: auto;
+  margin-top: 3rem;
+}
+
+/*to hide the border*/
+.login-cards2,
+.login-cards1 {
+  border: none;
+}
+
+.cards-body {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+
+}
+
+.cards-body .login-heading {
+  text-align: center;
+  color: black;
+  margin-top: 1rem;
+}
+.flex_text{
+  position: relative;
+}
+.material-symbols-outlined{
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  top: 60%;
+  right: 10px;
+}
+/*css for login details input and button */
+.cards-body .flex_text input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding: 3rem ;
+  width: 30rem;
+  padding-bottom: 1rem;
+  font-size: large;
+}
+
+.cards-button {
+  width: auto;
+  margin: 30px;
+  height: auto;
+}
+
+.cards-body .flex_button1 button {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  font-size: large;
+}
+
+/*css for create an account card*/
+.card-content {
+  text-align: center;
+}
+
+.cards-body p,
+button {
+  padding: 2rem;
+  font-size: x-large;
+  text-align: center;
+
+}
+
+.cards-body h3 {
+  font-size: xx-large;
+  padding: 2rem;
+  margin-top: 10px;
+}
+
+.cards-body button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: auto;
+  margin-top: 10px;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+
+/*media query for max width 1000px*/
+@media (max-width:1130px) {
+  .login-container {
+    display: block;
+    
+  }
+  .login-cards3 {
+  overflow: hidden;
+}
+
+
+  .login-cards2 {
+    display: none;
+  }
+  .login-cards1{
+    padding-bottom: 10rem;
+  }
+
+  .login-container .login-cards1 {
+    width: 50rem;
+    margin-left: 15rem;
+  }
+}
+
+/*media query for max width*/
+@media (max-width:800px) {
+  .login-container {
+    width: auto;
+    margin: 30px;
+    height: auto;
+  }
+
+}
+
+/*==============================================================*/
+
+
+/*****************************************/
+/** GENERAL STYLES **/
+/*****************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* navbar  =========================*/
+.title-link {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+}
+
+a,
+.nav-select {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#my-nav {
+  height: 8rem;
+  padding: 0 70px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li a {
+  padding-left: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  /*vertical list*/
+  font-size: 1rem;
+  display: flex;
+  padding-top: 2rem;
+  /*align with Watchshop heading*/
+  color: #000;
+}
+
+.nav-select {
+  border: none;
+  font-size: 1rem;
+  margin-left: 30px;
+  max-width: 80px;
+}
+
+.link-signup {
+  font-weight: 700;
+  color: #000;
+}
+
+/* ============================================== */
+
+
+/* temporary container style for template*/
+.container {
+  padding: 30vh 40px;
+}
+
+/* ================== */
+#my-header {
+  height: 100vh;
+  background-color: orangered;
+  margin-bottom: 9rem;
+}
+
+.header-img {
+  height: auto;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.col img {
+  width: 100%;
+}
+
+.brand {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 9rem;
+}
+
+.horizontal-space {
+  column-gap: 5rem;
+}
+
+.shop {
+  position: relative;
+}
+
+.shop__box {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+
+.shop__caption {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.shop__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* footer ==================================== */
+footer {
+  margin-top: 100px;
+  padding: 2rem 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.footer_link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.col-1 {
+  margin-left: 25px;
+  flex-basis: 10%;
+}
+
+.col-2 {
+  flex-basis: 15%;
+}
+
+.col-3,
+.col-4 {
+  flex-basis: 30%;
+}
+
+
+/* social media icons */
+.social-logos {
+  margin: auto;
+  width: 70%;
+}
+
+.col .social-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* for newsletter */
+.footer-text {
+  margin: auto;
+  width: 85%;
+  font-size: 1rem;
+}
+
+#email {
+  display: block;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding: 5px;
+  outline: none;
+}
+
+/* join button */
+.button {
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 1rem;
+
+}
+
+/* ======================================================= 
+
+/*=======================Thank You Page===================*/
+
+
+h1 p {
+  color: black;
+}
+/*Back to Home button*/
+button{
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+}
+
+/*===================Shipping/Payment Page==============*/
+.form-box{
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+ .shipping-container{
+  padding: 15% 5%;
+  font-family: "Inter";
+  font-size: 14px;
+}
+.shipping-option{
+  margin-bottom: 10px;
+}
+.shipping-option label{
+  font-weight: bold;
+  cursor: pointer;
+}
+.shipping-option input[type="radio"]{
+  margin-right: 5px;
+}
+
+ 
+
